@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class Hangman {
 
 
-/*
-        System.out.println("WELCOME TO THE GAME OF HANGMAN!\nWhere you essentially try to not hang a man.");
+
+       /* System.out.println("WELCOME TO THE GAME OF HANGMAN!\nWhere you essentially try to not hang a man.");
         System.out.println("I will be making up words and you will try and guess them one letter at a time.");
         System.out.println("But hold on now you only have 7 tries to guess the word before the man is hanged.");
-        System.out.println("So good luck and get to guessing! (Do not type in caps. Only lowercase!)");*/
-
-
+        System.out.println("So good luck and get to guessing! (Do not type in caps. Only lowercase!)");
+*/
+//words used
     private static String[] words = {"terminator", "banana", "computer", "cow", "rain", "water", "chairs" , "Dwarves",
     "crypt","awkward","ninjas","bagpipes","fishhook"};
     private static String word = words[(int) (Math.random() * words.length)];
     private static String asterisk = new String(new char[word.length()]).replace("\0", "*");
     private static int count = 0;
-
+//scanner
     public static void main (String[]args){
         Scanner sc = new Scanner(System.in);
-
+//tries
         while (count < 7 && asterisk.contains("*")) {
             System.out.println("Guess any letter in the word");
             System.out.println(asterisk);
@@ -27,7 +27,7 @@ public class Hangman {
         }
         sc.close();
     }
-
+//guesses
     public static void hang (String guess){
         String newasterisk = "";
         for (int i = 0; i < word.length(); i++) {
@@ -50,7 +50,7 @@ public class Hangman {
             System.out.println("Correct! You win! The word was " + word);
         }
     }
-
+//hangman code
     public static void hangmanImage () {
         if (count == 1) {
             System.out.println("Wrong guess, try again");
