@@ -20,7 +20,7 @@ public class Hangman {
         System.out.println("So good luck and get to guessing! (Do not type in caps. Only lowercase!)");
         Scanner sc = new Scanner(System.in);
 //tries
-        while (count < 8 && asterisk.contains("*")) {
+        while (count < 9 && asterisk.contains("*")) {
             System.out.println("Guess any letter in the word");
             System.out.println(asterisk);
             String guess = sc.next();
@@ -55,7 +55,7 @@ public class Hangman {
     public static void hangmanImage () {
         if (count == 1) {
 
-            System.out.println("This is your "+count+"st of 7 fails..");
+            System.out.println("This is your "+count+"st of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println();
             System.out.println();
@@ -66,7 +66,7 @@ public class Hangman {
         }
         if (count == 2) {
 
-            System.out.println("This is your "+count+"st of 7 fails..");
+            System.out.println("This is your "+count+"nd of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println();
             System.out.println();
@@ -76,7 +76,7 @@ public class Hangman {
             System.out.println("___|___");
         }
         if (count == 3) {
-            System.out.println("This is your "+count+"nd of 7 fails..");
+            System.out.println("This is your "+count+"rd of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println("   |");
             System.out.println("   |");
@@ -88,7 +88,7 @@ public class Hangman {
             System.out.println("___|___");
         }
         if (count == 4) {
-            System.out.println("This is your "+count+"rd of 7 fails..");
+            System.out.println("This is your "+count+"th of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println("   ____________");
             System.out.println("   |");
@@ -101,7 +101,7 @@ public class Hangman {
             System.out.println("___|___");
         }
         if (count == 5) {
-            System.out.println("This is your "+count+"rd of 7 fails..");
+            System.out.println("This is your "+count+"th of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println("   ____________");
             System.out.println("   |          _|_");
@@ -114,7 +114,7 @@ public class Hangman {
             System.out.println("___|___");
         }
         if (count == 6) {
-            System.out.println("This is your "+count+"th of 7 fails..");
+            System.out.println("This is your "+count+"th of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println("   ____________");
             System.out.println("   |          _|_");
@@ -127,7 +127,7 @@ public class Hangman {
             System.out.println("___|___");
         }
         if (count == 7) {
-            System.out.println("This is your "+count+"th of 7 fails..");
+            System.out.println("This is your "+count+"th of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println("   ____________");
             System.out.println("   |          _|_");
@@ -140,7 +140,7 @@ public class Hangman {
             System.out.println("___|___");
         }
         if (count == 8) {
-            System.out.println("This is your "+count+"th of 7 fails..");
+            System.out.println("This is your "+count+"th of 9 fails..");
             System.out.println("Wrong guess, try again");
             System.out.println("   ____________");
             System.out.println("   |          _|_");
@@ -153,7 +153,7 @@ public class Hangman {
             System.out.println("___|___      /   \\");
         }
         if (count == 9) {
-            System.out.println("This is your "+count+"th of 7 fails..");
+            System.out.println("This is your "+count+"th of 9 fails..");
             System.out.println("GAME OVER!");
             System.out.println("   ____________");
             System.out.println("   |          _|_");
