@@ -1,12 +1,6 @@
 
 import java.util.Scanner;
 public class Hangman {
-//do{}System.out.println("Good game, would you like to play again?");
-//            sc.nextLine();
-//            while(!board.nextLine().equals("no"));
-//            System.out.println("Thanks for playing!");
-
-
 //words used
     private static String[] words = {"terminator","banana","computer","cow","rain","water","chairs" ,"dwarves",
     "crypt","awkward","ninjas","bagpipes","fishhook","yeet","dab","jazz", "naenae","banjo","gazebo","jukebox","kiosk",
