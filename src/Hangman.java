@@ -2,9 +2,16 @@
 import java.util.Scanner;
 public class Hangman {
 //words used
-    private static String[] words = {"terminator","banana","computer","cow","rain","water","chairs" ,"dwarves",
-    "crypt","awkward","ninjas","bagpipes","fishhook","yeet","dab","jazz", "naenae","banjo","gazebo","jukebox","kiosk",
-    "oxygen","sphinx","zombie","yacht","unzip","zebra","rhythm","restaurant"};
+    private static String[] words = {
+            //CHOOSE YOUR TIER
+        //TIER 1 WORDS
+        "terminator","restaurant","fishhook","bagpipes","awkward","jukebox","dwarves",
+        //TIER 2 WORDS
+        "zombie","rhythm","gazebo","banjo","sphinx","yacht","unzip","zebra","crypt","jazz",
+        //TIER 3 WORDS
+        "oxygen","computer","ninjas","yeet","dab","naenae","kiosk",
+        //TIER 4 WORDS
+        "banana","chairs","cow","rain","water",};
     private static String word = words[(int) (Math.random() * words.length)];
     private static String asterisk = new String(new char[word.length()]).replace("\0", "*");
     private static int count = 0;
@@ -14,10 +21,12 @@ public class Hangman {
 
                 do {
                     System.out.println("Thanks for playing!");
-                    System.out.println("WELCOME TO THE GAME OF HANGMAN!\nWhere you essentially try to not hang a man.");
+                    System.out.println("WELCOME TO THE GAME OF HANGMAN! 2 PLAYER EDITION");
+                    System.out.println("Where you essentially try to not hang a man.");
                     System.out.println("I will be making up words and you will try and guess them one letter at a time.");
                     System.out.println("But hold on now you only have 7 tries to guess the word before the man is hanged.");
                     System.out.println("So good luck and get to guessing! (Do not type in caps. Only lowercase!)");
+
 
 //tries
 
@@ -57,8 +66,8 @@ public class Hangman {
                     asterisk = newasterisk;
                 }
                 if (asterisk.equals(word)) {
-                    System.out.println("Correct! You win! The word was " + word + " you had points");
-                    System.out.println("would you like to play again?");
+                    System.out.println("Correct! You win! The word was " + word + " you had point(s)");
+                    System.out.println("Player two are you up to the challenge?");
                 }
 
             }
