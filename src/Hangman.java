@@ -22,9 +22,9 @@ public class Hangman {
                 do {
                     System.out.println("Thanks for playing!");
                     System.out.println("WELCOME TO THE GAME OF HANGMAN! 2 PLAYER EDITION");
-                    System.out.println("Where you essentially try to not hang a man.");
+                    System.out.println("Where you essentially try to not hang a man. And trade rounds with another");
                     System.out.println("I will be making up words and you will try and guess them one letter at a time.");
-                    System.out.println("But hold on now you only have 7 tries to guess the word before the man is hanged.");
+                    System.out.println("But hold on now you only have 9 tries to guess the word before the man is hanged.");
                     System.out.println("So good luck and get to guessing! (Do not type in caps. Only lowercase!)");
 
 
@@ -185,7 +185,7 @@ public class Hangman {
                     System.out.println("   |         / | \\");
                     System.out.println("   |          / \\ ");
                     System.out.println("___|___      /   \\");
-                    System.out.println("GAME OVER! The word was " + word+" would you like to play again?");
+                    System.out.println("GAME OVER! The word was " + word+" Player 2 do you attempt?");
 
 
                 }
