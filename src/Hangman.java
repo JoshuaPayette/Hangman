@@ -26,27 +26,19 @@ public class Hangman {
                     System.out.println("I will be making up words and you will try and guess them one letter at a time.");
                     System.out.println("But hold on now you only have 9 tries to guess the word before the man is hanged.");
                     System.out.println("So good luck and get to guessing! (Do not type in caps. Only lowercase!)");
-
-
-//tries
-
-
+                    //tries
                     while (count < 9 && asterisk.contains("*")) {
                         System.out.println("Guess any letter in the word");
                         System.out.println(asterisk);
                         String guess = sc.next();
                         hang(guess);
                     }
-
                     sc.nextLine();
                 }while(!sc.nextLine().equals("no"));
             System.out.println("Thanks for playing!");
-
         }
-//guesses
-
+            //guesses
             public static void hang (String guess){
-
 
                 String newasterisk = "";
                 for (int i = 0; i < word.length(); i++) {
@@ -69,10 +61,8 @@ public class Hangman {
                     System.out.println("Correct! You win! The word was " + word + " you had point(s)");
                     System.out.println("Player two are you up to the challenge?");
                 }
-
             }
-
-//hangman code
+            //hangman code
             public static void hangmanImage () {
                 if (count == 1) {
 
