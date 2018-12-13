@@ -39,32 +39,35 @@ public class Hangman {
         }
             //guesses
             public static void hang (String guess){
+                Scanner sc = new Scanner(System.in);
 
-                String newasterisk = "";
-                for (int i = 0; i < word.length(); i++) {
-                    if (word.charAt(i) == guess.charAt(0)) {
-                        newasterisk += guess.charAt(0);
-                    } else if (asterisk.charAt(i) != '*') {
-                        newasterisk += word.charAt(i);
-                    } else {
-                        newasterisk += "*";
-                    }
-                }
+                        String newasterisk = "";
+                        for (int i = 0; i < word.length(); i++) {
+                            if (word.charAt(i) == guess.charAt(0)) {
+                                newasterisk += guess.charAt(0);
+                            } else if (asterisk.charAt(i) != '*') {
+                                newasterisk += word.charAt(i);
+                            } else {
+                                newasterisk += "*";
+                            }
+                        }
 
-                if (asterisk.equals(newasterisk)) {
-                    count++;
-                    hangmanImage();
-                } else {
-                    asterisk = newasterisk;
-                }
-                if (asterisk.equals(word)) {
-                    System.out.println("Correct! You win! The word was " + word + " you had point(s)");
-                    System.out.println("Player two are you up to the challenge?");
-                }
+                        if (asterisk.equals(newasterisk)) {
+                            count++;
+                            hangmanImage();
+                        } else {
+                            asterisk = newasterisk;
+                        }
+                        if (asterisk.equals(word)) {
+                            System.out.println("Correct! You win! The word was " + word + " you had point(s)");
+                            System.out.println("Player two are you up to the challenge?");
+                        }
+
             }
             //hangman code
             public static void hangmanImage () {
                 if (count == 1) {
+                    Scanner sc = new Scanner(System.in);
 
                     System.out.println("This is your " + count + "st of 9 fails..");
                     System.out.println("Wrong guess, try again");
